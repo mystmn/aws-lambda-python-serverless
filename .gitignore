@@ -1,0 +1,9 @@
+#NPM
+node_modules
+
+#Serverless
+.serverless
+
+#Python3
+__pycache__
+venv
