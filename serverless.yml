@@ -1,4 +1,4 @@
-service: quotes
+service: aws-python3-csci2999
 configValidationMode: error
 
 provider:
