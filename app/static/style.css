@@ -1,0 +1,65 @@
+body{
+    background-color: darkgray;
+    color: whitesmoke
+}
+
+.title{
+    color: whitesmoke;
+    font-weight: 600;
+}
+
+hr{
+    width: 30%;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* SECTION AREA */
+section{
+    display: flow-root;
+    margin: auto;
+    height: 100%;
+}
+
+section.purpose{
+    margin-top: 2rem;
+    width: 50rem;
+}
+
+section.checklist{
+    margin-top: 1rem;
+    color: whitesmoke;
+}
+
+section.checklist > h2{
+    font-size: 1.25rem;
+    color: whitesmoke;
+}
+
+/* Checklist */
+.checklist-left > h3, .checklist-right > h3  {
+    font-size: 1.2rem;
+    text-decoration: underline;
+    color: #4a4a4a;
+}
+.checklist-left > dl, .checklist-right > dl{
+    text-align: left;
+    margin-left: 30%;
+}
+
+.checklist-left{
+    float: left;
+    width: 25%;
+    margin-left: 25%;
+}
+.checklist-right{
+    float: right;
+    width: 25%;
+    margin-right: 25%;
+}
+
+section.sticky-notes{
+    display: block;
+    margin: auto;
+}
