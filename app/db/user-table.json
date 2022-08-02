@@ -1,0 +1,15 @@
+{
+    "TableName": "userCreation",
+    "KeySchema": [
+      { "AttributeName": "userEmail", "KeyType": "HASH" },
+      { "AttributeName": "userPassword", "KeyType": "RANGE" }
+    ],
+    "AttributeDefinitions": [
+      { "AttributeName": "userEmail", "AttributeType": "S" },
+      { "AttributeName": "userPassword", "AttributeType": "S" }
+    ],
+    "ProvisionedThroughput": {
+      "ReadCapacityUnits": 1,
+      "WriteCapacityUnits": 1
+    }
+}

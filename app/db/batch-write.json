@@ -1,0 +1,61 @@
+{
+    "UserCreation": [
+      {
+        "PutRequest": {
+          "Item":
+          {
+            "ID": {
+              "N": "1"
+            },
+            "UserEmail": {
+              "S": "paul.smith@gmail.com"
+            },
+            "UserPassword": {
+              "S": "thisIsAPassword"
+            },
+            "UserName": {
+              "S": "mystmn1985"
+            }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item":
+          {
+            "ID": {
+              "N": "2"
+            },
+            "UserEmail": {
+              "S": "jess.smith@gmail.com"
+            },
+            "UserPassword": {
+              "S": "doubleBlessed2"
+            },
+            "UserName": {
+              "S": "jessSkinner"
+            }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item" : 
+          {
+            "ID": {
+              "N": "3"
+            },
+            "UserEmail": {
+              "S": "danshoults@yahoo.com"
+            },
+            "UserPassword": {
+              "S": "Trinity-Health!1965"
+            },
+            "UserName": {
+              "S": "Dan_Shoults"
+            }
+          }
+        }
+      }
+    ]
+  }

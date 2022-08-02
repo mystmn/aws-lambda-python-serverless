@@ -4,8 +4,15 @@ from flask_login import login_required, login_user, logout_user
 
 from .models import User
 from . import db
+from random import randint
 
 auth = Blueprint('auth', __name__)
+
+@auth.route('/usercreation')
+def create_account():
+    dynamo.tables['users'].put_item(data={
+        'userEmail': randint(0,50000) + '@google.com',
+    })
 
 @auth.route('/login')
 def login():
