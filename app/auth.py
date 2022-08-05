@@ -1,18 +1,24 @@
+from crypt import methods
 from flask import Blueprint, redirect, render_template, url_for, request, flash
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_login import login_required, login_user, logout_user
 
 from .models import User
-from . import db
+from .db import dynamo
 from random import randint
 
 auth = Blueprint('auth', __name__)
 
-@auth.route('/usercreation')
+@auth.route('/usercreation', methods=[ 'GET', 'POST'])
 def create_account():
-    dynamo.tables['users'].put_item(data={
-        'userEmail': randint(0,50000) + '@google.com',
+    userEmailAccount =  (f"{randint(0,50000)}@google.com")
+    userPasswordAccount =  "sfsdfsklkjk"
+
+    dynamo.tables['userCreation'].put_item(data={
+    'userEmail': userEmailAccount,
+    'userPassword': userPasswordAccount
     })
+    print(f"User created '{userEmailAccount}' and '{userPasswordAccount}' ")
 
 @auth.route('/login')
 def login():
