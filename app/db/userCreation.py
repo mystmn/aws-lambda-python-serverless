@@ -7,30 +7,30 @@ def create_user_table(dynamoDB=None):
         table = dynamoDB.create_table(
                 TableName='userCreation',
                 KeySchema=[
-                {
-                        'AttributeName': 'userEmail',
-                        'KeyType': 'HASH'  # Partition key
-                },
-                {
-                        'AttributeName': 'userPassword',
-                        'KeyType': 'RANGE'  # Sort key
-                }
-                ],
-                AttributeDefinitions=[
-                {
-                        'AttributeName': 'userEmail',
-                        # AttributeType defines the data type. 'S' is string type and 'N' is number type
-                        'AttributeType': 'S'
-                },
-                {
-                        'AttributeName': 'userPassword',
-                        'AttributeType': 'N'
-                },
+                        {
+                                'AttributeName': 'userEmail',
+                                'KeyType': 'HASH'  # Partition key
+                        },
+                        {
+                                'AttributeName': 'userPassword',
+                                'KeyType': 'RANGE'  # Sort key
+                        }
+                        ],
+                        AttributeDefinitions=[
+                        {
+                                'AttributeName': 'userEmail',
+                                # AttributeType defines the data type. 'S' is string type and 'N' is number type
+                                'AttributeType': 'S'
+                        },
+                        {
+                                'AttributeName': 'userPassword',
+                                'AttributeType': 'N'
+                        },
                 ],
                 ProvisionedThroughput={
-                # ReadCapacityUnits set to 10 strongly consistent reads per second
-                'ReadCapacityUnits': 2,
-                'WriteCapacityUnits': 2  # WriteCapacityUnits set to 10 writes per second
+                        # ReadCapacityUnits set to 10 strongly consistent reads per second
+                        'ReadCapacityUnits': 2,
+                        'WriteCapacityUnits': 2  # WriteCapacityUnits set to 10 writes per second
                 }
         )
         return table
