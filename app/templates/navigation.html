@@ -1,0 +1,16 @@
+<div class="hero-head">
+  <nav class="navbar">
+    <div class="container">
+      <div id="navbarMenuHeroA" class="navbar-menu">
+        <div class="navbar-end">
+          <a href="{{ url_for('indexController.index') }}" class="navbar-item">
+            Home
+          </a>
+          {% for key, value in menu.items() %}
+            <li><a href="{{ value }}">{{ key}}</a></li>
+          {% endfor %}
+      </div>
+    </div>
+  </nav>
+</div>
+<p>Testing navigation</p>

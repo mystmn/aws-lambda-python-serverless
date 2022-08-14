@@ -1,4 +1,24 @@
-{% extends "base.html" %} {% block content %}
+{% extends "base.html" %} 
+<!-- {% block navigation %}
+<div class="hero-head">
+    <nav class="navbar">
+      <div class="container">
+        <div id="navbarMenuHeroA" class="navbar-menu">
+          <div class="navbar-end">
+            <a href="{{ url_for('indexController.index') }}" class="navbar-item">
+              Home
+            </a>
+            {% for key, value in menu.items() %}
+              <li><a href="{{ value }}">{{ key}}</a></li>
+            {% endfor %}
+        </div>
+        <p>test</p>
+      </div>
+    </nav>
+  </div>
+{% endblock %} -->
+
+{% block content %}
 <h1 class="title">CSCI-2999 'Complete Phase 1'</h1>
 <h2 class="subtitle">Hire Technology Experts.</h2>
 <section class="purpose">

@@ -28,5 +28,8 @@ with app.app_context():
 # from .route.client.indexRoute import indexRoute as indexBluePrint
 # app.register_blueprint(indexBluePrint)
 
-from .contoller.profileController import profileController as profileBluePrint
+from .controller.profileController import profileController as profileBluePrint
 app.register_blueprint(profileBluePrint)
+
+from .controller.indexController import indexController as indexBluePrint
+app.register_blueprint(indexBluePrint)
