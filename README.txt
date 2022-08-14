@@ -13,6 +13,6 @@ install dependencies    |  pip install -r requirements.txt
 
 ## Enviroment           | 
 make envirnoment        |  python3 -m venv env               | virtualenv -p python3 venv
-activate enviroment     |  /venv/Scripts/activate
+activate enviroment     |  source venv/Scripts/activate
 
 ## serverless

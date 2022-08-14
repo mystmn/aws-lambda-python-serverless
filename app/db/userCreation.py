@@ -1,8 +1,7 @@
 import boto3
 
 def create_user_table(dynamoDB=None):
-        dynamoDB = boto3.resource(
-        'dynamodb', endpoint_url="http://localhost:8000")
+        dynamoDB = boto3.resource('dynamodb', endpoint_url="http://localhost:8000")
 
         table = dynamoDB.create_table(
                 TableName='userCreation',
