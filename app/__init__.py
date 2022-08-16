@@ -21,12 +21,15 @@ with app.app_context():
 #     return User.query.get(int(user_id))
 
 # blueprint for auth routes in our app
-from .route.client.loginRoute import loginAccount as loginBluePrint
-app.register_blueprint(loginBluePrint)
+# from .route.client.loginRoute import loginAccount as loginBluePrint
+# app.register_blueprint(loginBluePrint)
 
 # blueprint for non-auth parts of app
-from .route.client.indexRoute import indexRoute as indexBluePrint
-app.register_blueprint(indexBluePrint)
+# from .route.client.indexRoute import indexRoute as indexBluePrint
+# app.register_blueprint(indexBluePrint)
 
-from .route.client.profileRoute import profileAccount as profileBluePrint
+from .controller.profileController import profileController as profileBluePrint
 app.register_blueprint(profileBluePrint)
+
+from .controller.indexController import indexController as indexBluePrint
+app.register_blueprint(indexBluePrint)

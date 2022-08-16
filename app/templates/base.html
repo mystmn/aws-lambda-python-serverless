@@ -10,23 +10,14 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css"
     /> -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
   </head>
   <body>
     <section class="hero is-fullheight">
-      <div class="hero-head">
-        <nav class="navbar">
-          <div class="container">
-            <div id="navbarMenuHeroA" class="navbar-menu">
-              <div class="navbar-end">
-                <a href="{{ url_for('indexRoute.index') }}" class="navbar-item">
-                  Home
-                </a>
-            </div>
-          </div>
-        </nav>
-      </div>
-
+      {% include 'navigation.html' %}
       <div class="hero-body">
         <div class="container has-text-centered">
           {% block content %} {% endblock %}

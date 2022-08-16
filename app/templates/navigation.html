@@ -1,0 +1,14 @@
+<div class="hero-head">
+  <nav class="navbar">
+    <div class="container">
+      <div id="navbarMenuHeroA" class="navbar-menu">
+        <div class="navbar-end">
+          <ul>
+          {% for key, value in menu.items() %}
+            <li><a href="{{ value }}"  class="navbar-item">{{ key}}</a></li>
+          {% endfor %}
+        </ul>
+        </div>
+    </div>
+  </nav>
+</div>
