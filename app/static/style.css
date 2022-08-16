@@ -63,3 +63,8 @@ section.sticky-notes{
     display: block;
     margin: auto;
 }
+
+.navbar-end{
+    color: red;
+    width: 300px;
+}

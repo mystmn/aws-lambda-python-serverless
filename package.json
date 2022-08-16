@@ -4,6 +4,7 @@
     "serverless-wsgi": "^3.0.0"
   },
   "dependencies": {
+    "bootstrap": "^5.2.0",
     "config": "^3.3.7",
     "serverless": "^3.21.0"
   }

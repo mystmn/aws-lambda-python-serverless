@@ -5,4 +5,8 @@ indexController = Blueprint('indexController', __name__)
 
 @indexController.route('/')
 def index():
-    return render_template('index.html', menu={'Home': '/', 'About': '/about'})
+    return render_template('index.html', menu=menu(), title=index.__name__)
+
+
+def menu():
+    return {'Home': '/', 'About': '/about'}

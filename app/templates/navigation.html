@@ -3,14 +3,12 @@
     <div class="container">
       <div id="navbarMenuHeroA" class="navbar-menu">
         <div class="navbar-end">
-          <a href="{{ url_for('indexController.index') }}" class="navbar-item">
-            Home
-          </a>
+          <ul>
           {% for key, value in menu.items() %}
-            <li><a href="{{ value }}">{{ key}}</a></li>
+            <li><a href="{{ value }}"  class="navbar-item">{{ key}}</a></li>
           {% endfor %}
-      </div>
+        </ul>
+        </div>
     </div>
   </nav>
 </div>
-<p>Testing navigation</p>
