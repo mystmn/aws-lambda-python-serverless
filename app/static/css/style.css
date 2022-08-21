@@ -3,6 +3,11 @@ body{
     color: whitesmoke
 }
 
+/* Font Type */
+h2{
+    
+}
+
 .title{
     color: whitesmoke;
     font-weight: 600;
@@ -10,7 +15,6 @@ body{
 
 hr{
     width: 30%;
-    background-color: black;
     margin-left: auto;
     margin-right: auto;
 }
@@ -22,49 +26,30 @@ section{
     height: 100%;
 }
 
-section.purpose{
-    margin-top: 2rem;
-    width: 50rem;
+.section-title{
+    padding: 2rem 0;
+    text-align: center !important;
 }
 
-section.checklist{
-    margin-top: 1rem;
-    color: whitesmoke;
+section.services{
+    width: fit-content;
 }
 
-section.checklist > h2{
-    font-size: 1.25rem;
-    color: whitesmoke;
+section.services > div.row > .card{
+    flex-shrink: 0;
+    padding: 0 !important; 
 }
 
-/* Checklist */
-.checklist-left > h3, .checklist-right > h3  {
-    font-size: 1.2rem;
-    text-decoration: underline;
-    color: #4a4a4a;
+/* Grid Images */
+.grid-images, .card{
+    width: 20rem;
+    border: 2rem;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
 }
-.checklist-left > dl, .checklist-right > dl{
-    text-align: left;
-    margin-left: 30%;
-}
-
-.checklist-left{
-    float: left;
-    width: 25%;
-    margin-left: 25%;
-}
-.checklist-right{
-    float: right;
-    width: 25%;
-    margin-right: 25%;
-}
-
-section.sticky-notes{
-    display: block;
-    margin: auto;
-}
-
-.navbar-end{
-    color: red;
-    width: 300px;
+.grid-images p{
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
 }
