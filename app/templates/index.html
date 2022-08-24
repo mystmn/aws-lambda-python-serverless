@@ -1,44 +1,87 @@
-{% extends "base.html" %} 
-
-{% block content %}
-<h1 class="title">{{title}}</h1>
-<h2 class="subtitle">Hire Technology Experts.</h2>
-<section class="purpose">
-  <p>
-    Phase one lays the foundation for handling errors, authorization,
-    authentication, logs, hosting, and databases. All the logic and processes
-    build on those choices. We must think about resources, what our setup can
-    handle or can’t, and what are our limitations? The goal is also to get the
-    application running, starting with the simplest forms of our website, and
-    then adding more functionality at a later date.
-  </p>
+{% extends "base.html" %} {% block content %}
+<section class="purpose row">
+  <div class="col-12 section-title">
+    <h2>JP Technology</h2>
+    <h3 class="subtitle">Experts that work for you.</h3>
+  </div>
+  <div class="col-12">
+    <p class="text-center">
+      Based In Pickerington, Ohio, we offer in-home computer services in Central
+      Ohio and the surrounding areas.
+    </p>
+  </div>
+  <div class="col-12">
+    <p class="text-center">
+      Our expert computer technicians offer a flat rate and free estimates on a
+      wide range of computer repair services.
+    </p>
+  </div>
 </section>
-<hr>
-<section class="checklist">
-    <h1 class="title">Checklist...</h1>
-    <div class="checklist-left">
-        <h3>Progress</h3>
-        <dl>
-            <li>error handling</li>
-            <li>logs</li>
-        </dl>
+<hr />
+<section class="services">
+  <div class="row no-gutters align-items-start">
+    <div class="card bg-dark text-white">
+      <img
+        class="card-img"
+        src="{{url_for('static', filename='img/craiyon_033543_water_fall_leaving_laptop_screen_br_.png')}}"
+        alt="Card image"
+      />
+      <div class="card-img-overlay">
+        <h5 class="card-title">Computer Repair</h5>
+        <p class="card-text">
+          This is a wider card with supporting text below as a natural lead-in
+          to additional content. This content is a little bit longer.
+        </p>
+        <p class="card-text">Last updated 3 mins ago</p>
+      </div>
     </div>
-    <div class="checklist-right">
-        <h3>Completed</h3>
-        <dl>
-            <li>authorization</li>
-            <li>authentication</li>
-            <li>hosting</li>
-            <li>database</li>
-        </dl>
+    <div class="card bg-dark text-white">
+      <img
+        class="card-img"
+        src="https://picsum.photos/300/300"
+        alt="Card image"
+      />
+      <div class="card-img-overlay">
+        <h5 class="card-title">Network Setup</h5>
+        <p class="card-text">
+          This is a wider card with supporting text below as a natural lead-in
+          to additional content. This content is a little bit longer.
+        </p>
+        <p class="card-text">Last updated 3 mins ago</p>
+      </div>
     </div>
-</section>
-<hr>
-<section class="sticky-notes">
-    <h2>Phase one sticky notes can be found at 
-        <a href="https://miro.com/app/board/uXjVOmnjlHo=/">
-            https://miro.com/app/board/uXjVOmnjlHo=/
-        </a>
-    </h2>
+  </div>
+  <div class="row no-gutters align-items-end">
+    <div class="card bg-dark text-white">
+      <img
+        class="card-img"
+        src="https://picsum.photos/300/300"
+        alt="Card image"
+      />
+      <div class="card-img-overlay">
+        <h5 class="card-title">Website Making</h5>
+        <p class="card-text">
+          This is a wider card with supporting text below as a natural lead-in
+          to additional content. This content is a little bit longer.
+        </p>
+        <p class="card-text">Last updated 3 mins ago</p>
+      </div>
+    </div>
+    <div class="card bg-dark text-white">
+      <img
+        class="card-img"
+        src="https://picsum.photos/300/300"
+        alt="Card image"
+      />
+      <div class="card-img-overlay">
+        <h5 class="card-title">Backup Solutions</h5>
+        <p class="card-text">
+          This is a wider card with supporting text below as a natural lead-in
+          to additional content. This content is a little bit longer.
+        </p>
+        <p class="card-text">Last updated 3 mins ago</p>
+      </div>
+    </div>
+  </div>
 </section>
 {% endblock %}
