@@ -1,15 +1,22 @@
-body{
-    background-color: darkgray;
-    color: whitesmoke
+/* FONT TYPE */
+:root{
+     --white: whitesmoke;
+     --secondary-color: cornflowerblue;
+     --black: rgba(0, 0, 0, 0.8);
+     --black-gradient: rgba(34, 34, 34, 0.8);
 }
 
-/* Font Type */
+body{
+    background-color: darkgray;
+    color: var(--white);
+}
+
 h2{
     
 }
 
 .title{
-    color: whitesmoke;
+    color: var(--white);
     font-weight: 600;
 }
 
@@ -17,6 +24,11 @@ hr{
     width: 30%;
     margin-left: auto;
     margin-right: auto;
+}
+
+.container-fluid{
+    display: block;
+    min-height: 400px;;
 }
 
 /* SECTION AREA */
@@ -38,18 +50,4 @@ section.services{
 section.services > div.row > .card{
     flex-shrink: 0;
     padding: 0 !important; 
-}
-
-/* Grid Images */
-.grid-images, .card{
-    width: 20rem;
-    border: 2rem;
-    border-radius: 10px;
-    position: relative;
-    text-align: center;
-}
-.grid-images p{
-    position: absolute;
-    bottom: 8px;
-    left: 16px;
 }

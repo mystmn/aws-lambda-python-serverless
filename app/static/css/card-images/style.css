@@ -1,0 +1,56 @@
+/* FONT-COLOR */
+.card-img-overlay > p,
+h5{
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+}
+
+h5.black-font{
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 600;
+
+}
+
+.grid-images{
+    background-color: transparent;
+}
+
+/* BACKGROUND-COLOR */
+
+.card-img-overlay{
+    background: var(black);  /* fallback for old browsers */
+    background: linear-gradient(var(--black), var(--black-gradient));  /* Chrome 10-25, Safari 5.1-6 */
+    /* border-radius: 75px; */
+    padding: .5rem;
+    opacity: .8rem;
+}
+
+/* Styles */
+.card-img-overlay > h5{
+    padding-top: 2rem;
+}
+
+.card-img-overlay > p{
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card-img-overlay > hr{
+    border: 2px solid var(--secondary-color);
+ } 
+
+.grid-images, .card{
+    width: 20rem;
+    border: 2rem;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+    opacity: .8;
+    border: 1px solid var(--secondary-color);
+}
+
+.grid-images{
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
